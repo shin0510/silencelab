@@ -1,0 +1,175 @@
+.loopSlide {
+  display: flex;
+  width: 100vw;
+  height: 1067px;
+  overflow: hidden;
+
+}
+  .loopSlide .loop {
+      min-width: 2560px;
+      height: 100%;
+   
+    }
+.aa{
+  
+  position: relative;
+}
+      .loopSlide .loop:first-child {
+          animation: slide1 60s -30s linear infinite;
+      }
+
+      .loopSlide .loop:last-child {
+          animation: slide2 60s linear infinite;
+      }
+
+
+@keyframes slide1 {
+0% {
+  transform: translateX(100%);
+}
+to {
+  transform: translateX(-100%);
+}
+}
+
+@keyframes slide2 {
+0% {
+  transform: translateX(0);
+}
+to {
+  transform: translateX(-200%);
+}
+}
+
+
+/* それぞれに対して絶対はいち */
+.loop{
+  font-size: 10px;
+  line-height: 10px;
+}
+.loop h3, .loop p, .loop>div{
+  color: #00fe02;
+  position: absolute;
+}
+.loop h3{
+  font-family: "Noto sans JP", "sans serif";
+  z-index: 2;
+  letter-spacing: 4px;
+}
+.loop p{
+  font-family: "EB Garamond", "sans serif";
+  font-size: 1.6em;
+  line-height: 1.2;
+  z-index: 2;
+  letter-spacing: 1px;
+}
+.loop .loop-title1,.loop .loop-title5,.loop .loop-title7{
+  font-size: 3.6em;
+  line-height: 1.5;
+}
+.loop .loop-title2,.loop .loop-title3,.loop .loop-title4,.loop .loop-title6,.loop .loop-title8,.loop .loop-title9{
+  font-size: 2.4em;
+  line-height: 1.5;
+}
+.loop .loop-title1,.loop .loop-title2,.loop .loop-title4,.loop .loop-title5,.loop .loop-title6,.loop .loop-title7,.loop .loop-title8,.loop .loop-title9{
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+ 
+}
+/* 以下にフォントなどを指定すればそれぞれ反映される */
+.loop-title1{
+  top:9.4% ;
+  left: 1.8%;
+}
+.loop-title2{
+  top:9.4% ;
+  left: 37%;
+}
+.loop-title3{
+  top:74% ;
+  left: 18%;
+}
+.loop-title4{
+  top:18.5% ;
+  left: 45%;
+}
+.loop-title5{
+  top:51.5% ;
+  left: 53%;
+}
+.loop-title6{
+  top:20% ;
+  left: 65%;
+}
+.loop-title7{
+  top:9.4% ;
+  left: 72%;
+}
+.loop-title8{
+  top:42% ;
+  left: 90%;
+}
+.loop-title9{
+  top:42% ;
+  left: 97%;
+}
+
+.loop-p1{
+  top: 9.4%;
+  left: 18%;
+  font-size: 2.4em !important;
+}
+.loop-p2{
+  top: 51.5%;
+  left: 13%;
+}
+.loop-p3{
+  top: 80.5%;
+  left: 18.5%;
+}
+.loop-p4{
+  top: 9.4%;
+  left: 45%;
+}
+.loop-p5{
+  top: 85%;
+  left: 58%;
+}
+.loop-p6{
+  top: 9.4%;
+  left: 81%;
+}
+.loop-p7{
+  top: 82%;
+  left: 84%;
+}
+.loop-img1{
+  top: 25%;
+  left: 7%;
+  width: 333px;
+  height: 500px;
+}
+.loop-img2{
+  top: 53%;
+  left: 27%;
+  width: 500px;
+  
+}
+.loop-img3{
+  top: 13%;
+  left: 49%;
+  width: 500px;
+
+}
+.loop-img4{
+  top: 60%;
+  left: 62%;
+  width: 333px;
+  height: 500px;
+}
+.loop-img5{
+  top: 9.5%;
+  left: 78%;
+  width: 500px;
+
+}
